@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 #项目信息
 s.name         = "TestLibDemo"#名字
-s.version      = "0.0.1"#版本号
+s.version      = "0.0.2"#版本号
   s.summary      = "测试项目"
 #描述
 s.description      = <<-DESC
@@ -32,7 +32,7 @@ s.ios.deployment_target = '8.0'
 
 
 #资源地址
-s.source       = { :git => "https://gitee.com/zhengjunjie/TestLibDemo.git", :tag => s.version.to_s  }
+s.source       = { :git => "https://github.com/zhengjunjie11/TestLibDemo.git", :tag => s.version.to_s  }
 
 #源代码
   s.source_files  = "Home/Model/*.{h,m}"
