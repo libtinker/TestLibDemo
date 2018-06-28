@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 #项目信息
 s.name         = "TestLibDemo"#名字
-s.version      = "0.0.2"#版本号
+s.version      = "0.0.3"#版本号
   s.summary      = "测试项目"
 #描述
 s.description      = <<-DESC
@@ -28,7 +28,7 @@ s.social_media_url   = "https://www.jianshu.com/u/0b735abc7135"#社交媒体网�
 
 
 #平台细节
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 
 
 #资源地址
@@ -38,13 +38,13 @@ s.source       = { :git => "https://github.com/zhengjunjie11/TestLibDemo.git", :
   s.source_files  = "Home/Model/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"#排除文件
 
-  # s.public_header_files = "Classes/**/*.h"
+# s.public_header_files = "Classes/**/*.h"
 
 
 
 #资源
 # s.resource  = "icon.png"#资源
-  # s.resources = "Resources/*.png"
+# s.resources = "Resources/*.png"
 # s.preserve_paths = "FilesToSave", "MoreFilesToSave"#路径
 
 
