@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 
 #项目信息
 s.name         = "TestLibDemo"#名字
-s.version      = "0.0.4"#版本号
+s.version      = "1.0.0"#版本号
   s.summary      = "测试项目"
 #描述
 s.description      = 'This library is testLib '      \
-'iThis library is testLib '    \
+'This library is testLib '    \
 'This library is testLib '
 
 #首页
@@ -48,8 +48,7 @@ s.source       = { :git => "https://github.com/zhengjunjie11/TestLibDemo.git", :
 # s.preserve_paths = "FilesToSave", "MoreFilesToSave"#路径
 
 
-#配置xcode
-#s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+
 #系统库使用
 # s.framework  = "SomeFramework"
 s.frameworks = "Accounts","AddressBook"
@@ -60,10 +59,12 @@ s.libraries = 'c++', 'sqlite3', 'stdc++.6.0.9', 'z'
 
 
 #依赖的非系统的静态库
-s.vendored_libraries = 'Home/lib/*.a'
-#依赖的非系统框架
-#s.vendored_frameworks = 'Home/framework/*.framework'
+s.vendored_libraries = 'Home/Lib/*.a'
 
+#依赖的非系统框架
+s.vendored_frameworks = 'Home/Frameworks/*.framework'
+
+#s.preserve_paths = "Home/Frameworks/*.framework"
 
 #第三方库使用
 s.dependency 'SDWebImage'
@@ -88,7 +89,9 @@ s.subspec 'VC' do |vc|
 vc.source_files  = 'Home/VC/*.{h,m}'
 end
 
+#配置xcode
 
+s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/Home/Frameworks" }
 
 
 end
